@@ -4,8 +4,7 @@ ENV \
   BASE_IMAGE=elifarley/docker-alpine-glibc \
   JAVA_VERSION=8 \
   JAVA_UPDATE=92 \
-  JAVA_BUILD=14 \
-  JAVA_HOME="/usr/lib/jvm/default-jvm"
+  JAVA_BUILD=14
 
 RUN \
   xinstall install jdk-8-nodesktop && \
