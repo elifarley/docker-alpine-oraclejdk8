@@ -6,7 +6,8 @@ ENV \
   JAVA_UPDATE=92 \
   JAVA_BUILD=14
 
-RUN \
-  xinstall install jdk-8-nodesktop && \
+RUN apk --no-cache add ca-certificates curl && \
+  curl -fsSL https://raw.githubusercontent.com/elifarley/cross-installer/master/install.sh | sh && \
   xinstall save-image-info && \
+  xinstall install jdk-8-nodesktop && \
   xinstall cleanup
