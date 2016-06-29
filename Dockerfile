@@ -9,5 +9,5 @@ ENV \
 RUN apk --update add ca-certificates curl && \
   curl -fsSL https://raw.githubusercontent.com/elifarley/cross-installer/master/install.sh | sh && \
   xinstall save-image-info && \
-  xinstall install jdk-8-nodesktop && \
+  xinstall add jdk-8-nodesktop && \
   xinstall cleanup
