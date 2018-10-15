@@ -1,5 +1,5 @@
-[![Docker Stars](https://img.shields.io/docker/stars/frolvlad/alpine-oraclejdk8.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-oraclejdk8/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/frolvlad/alpine-oraclejdk8.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-oraclejdk8/)
+[![Docker Stars](https://img.shields.io/docker/stars/elifarley/docker-alpine-oraclejdk8.svg?style=flat-square)](https://hub.docker.com/r/elifarley/docker-alpine-oraclejdk8/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/elifarley/docker-alpine-oraclejdk8.svg?style=flat-square)](https://hub.docker.com/r/elifarley/docker-alpine-oraclejdk8/)
 
 
 OracleJDK 8 Docker image
@@ -15,15 +15,15 @@ tag points to `cleaned`.
 
 `slim` (`master` branch) image size is:
 
-[![](https://badge.imagelayers.io/frolvlad/alpine-oraclejdk8:slim.svg)](https://imagelayers.io/?images=frolvlad/alpine-oraclejdk8:slim 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/elifarley/docker-alpine-oraclejdk8:slim.svg)](https://imagelayers.io/?images=elifarley/docker-alpine-oraclejdk8:slim 'Get your own badge on imagelayers.io')
 
 `cleaned` (`latest` tag) image size is:
 
-[![](https://badge.imagelayers.io/frolvlad/alpine-oraclejdk8:cleaned.svg)](https://imagelayers.io/?images=frolvlad/alpine-oraclejdk8:cleaned 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/elifarley/docker-alpine-oraclejdk8:cleaned.svg)](https://imagelayers.io/?images=elifarley/docker-alpine-oraclejdk8:cleaned 'Get your own badge on imagelayers.io')
 
 `full` image size is:
 
-[![](https://badge.imagelayers.io/frolvlad/alpine-oraclejdk8:full.svg)](https://imagelayers.io/?images=frolvlad/alpine-oraclejdk8:full 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/elifarley/docker-alpine-oraclejdk8:full.svg)](https://imagelayers.io/?images=elifarley/docker-alpine-oraclejdk8:full 'Get your own badge on imagelayers.io')
 
 
 Consider using `develar/java` image (~120MB) if you only need JRE (you can run
@@ -35,7 +35,7 @@ Usage Example
 
 ```bash
 $ echo 'public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }' > Main.java
-$ docker run --rm -v "$(pwd)":/mnt --workdir /mnt frolvlad/alpine-oraclejdk8:slim sh -c "javac Main.java && java Main"
+$ docker run --rm -v "$(pwd)":/mnt --workdir /mnt elifarley/docker-alpine-oraclejdk8:slim sh -c "javac Main.java && java Main"
 ```
 
 Once you have run this command you will get printed 'Hello World' from Java!
