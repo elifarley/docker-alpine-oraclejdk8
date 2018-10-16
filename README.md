@@ -2,11 +2,11 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/elifarley/docker-alpine-oraclejdk8.svg?style=flat-square)](https://hub.docker.com/r/elifarley/docker-alpine-oraclejdk8/)
 
 
-OracleJDK 8 Docker image
+Oracle JDK 8 Docker image
 ========================
 
 This image is based on Alpine Linux image, which is only a 5MB image, and contains
-[OracleJDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html).
+[Oracle JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html).
 
 JDK bundle contains lots of unnecessary for Docker image stuff, so it was cleaned up. There are 3
 tags: `full` (only src tarballs get removed), `cleaned` (desktop parts get cleaned), `slim`
