@@ -8,6 +8,10 @@ Oracle JDK 8 Docker image
 This image is based on Alpine Linux image, which is only a 5MB image, and contains
 [Oracle JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html).
 
+For newer JDK versions, see:
+* [Oracle JDK 10](https://github.com/elifarley/docker-alpine-oraclejdk10/)
+* [Oracle JDK 11](https://github.com/elifarley/docker-alpine-oraclejdk11/)
+
 JDK bundle contains lots of unnecessary for Docker image stuff, so it was cleaned up. There are 3
 tags: `full` (only src tarballs get removed), `cleaned` (desktop parts get cleaned), `slim`
 (everything but compiler and jvm is removed). `master` branch refers to `slim` tag, but `latest`
